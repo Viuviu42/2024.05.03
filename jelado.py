@@ -5,7 +5,9 @@ class Jel:
         self.sec = int(sec)
         self.x = x
         self.y = y
-    
+
+def eltelt(sh, smin, ssec, eh, emin, esec):
+    return (eh*60*60+emin*60+esec)-(sh*60*60+smin*60+ssec)
 
 file = open("jel.txt","rt")
 jel = []
