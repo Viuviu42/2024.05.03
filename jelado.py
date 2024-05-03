@@ -16,3 +16,7 @@ for i in file:
     jel.append(Jel(row[0], row[1], row[2],row[3],row[4]))
 
     
+print("2. feladat")
+qestion = int(input("Adja meg a jel sorszámát!"))
+print(f"x={jel[qestion-1].x} y={jel[qestion-1].y}")
+
