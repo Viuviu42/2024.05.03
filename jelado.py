@@ -43,3 +43,12 @@ for i in jel:
 
 print("5.feladat")
 print(f"Bal also: {xmin} {ymin} Jobb felso: {xmax} {ymax}")
+
+for i in range(len(jel)-1):
+    onex = jel[i].x-jel[i+1].x
+    oney = jel[i].y-jel[i+1].y
+    one = onex**2 + oney**2
+    count += one**0.5
+print("6. feladat")
+print(f"Elmozdulás: {round(count, 3)} egység")
+
