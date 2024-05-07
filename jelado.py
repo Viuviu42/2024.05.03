@@ -52,3 +52,7 @@ for i in range(len(jel)-1):
 print("6. feladat")
 print(f"Elmozdulás: {round(count, 3)} egység")
 
+hetfeladat = open("kimaradt.txt", "wt")
+for i in range(1, len(jel)):
+    ido = eltelt(jel[i-1].h, jel[i-1].min, jel[i-1].sec, jel[i].h, jel[i].min, jel[i].sec)
+    print(ido)
